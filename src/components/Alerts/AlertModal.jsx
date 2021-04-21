@@ -4,7 +4,6 @@ import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import AddNewForm from "../AddNewForm";
-import './AlertModal.css'
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -41,7 +40,7 @@ function AlertModal({ open, handleClose }) {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <h2 id="addnewModal-title">Add new alert</h2>
+            <h2 id="addnewModal-title" style={{marginBottom: '30px'}}>Add new alert</h2>
             <AddNewForm />
           </div>
         </Fade>
